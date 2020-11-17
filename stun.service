@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=root
 EnvironmentFile=/opt/stunserver/stunserver.env
-ExecStart=/opt/stunserver/stunserver
+ExecStart=/opt/stunserver/stunserver --reuseaddr
 KillMode=process
 
 [Install]
