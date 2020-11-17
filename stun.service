@@ -3,7 +3,7 @@ Description=STUN service
 After=network.target
 
 [Service]
-User=genieacs
+User=root
 EnvironmentFile=/opt/stunserver/stunserver.env
 ExecStart=/opt/stunserver/stunserver
 KillMode=process

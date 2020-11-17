@@ -3,7 +3,7 @@ Description=GenieACS CWMP
 After=network.target
 
 [Service]
-User=genieacs
+User=root
 EnvironmentFile=/opt/genieacs/genieacs.env
 ExecStart=/opt/genieacs/bin/genieacs-cwmp
 KillMode=process
