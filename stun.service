@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 User=root
+EnvironmentFile=/opt/stunserver/stunserver.env
 ExecStart=/opt/stunserver/stunserver
 KillMode=process
 
