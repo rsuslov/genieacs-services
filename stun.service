@@ -1,0 +1,11 @@
+[Unit]
+Description=Stuntman stunserver
+After=network.target
+
+[Service]
+User=genieacs
+ExecStart=/opt/stunserver/stunserver --reuseaddr
+KillMode=process
+
+[Install]
+WantedBy=default.target
